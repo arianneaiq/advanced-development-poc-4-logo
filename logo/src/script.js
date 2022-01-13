@@ -21,7 +21,7 @@ const gltfLoader = new GLTFLoader()
 // Models
 gltfLoader.load(
     '/models/3Dlogo.glb',
-    (gltf) => {
+    function (gltf) {
         gltf.scene.scale.set(1.5, 1.5, 1.5)
         gltf.scene.rotation.y = Math.PI * 0.75
         scene.add(gltf.scene)
